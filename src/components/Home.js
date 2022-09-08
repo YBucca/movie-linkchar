@@ -4,11 +4,13 @@ import Banner from "./Banner";
 import Aside from "./Aside";
 const Home = () => {
 	return (
-		<div>
-      <Aside />
-			<Banner />
-			<ContainerContinue />
-			<ContainerPopular />
+		<div className="d-flex">
+			<Aside />
+			<div>
+				<Banner />
+				<ContainerContinue />
+				<ContainerPopular />
+			</div>
 		</div>
 	);
 };

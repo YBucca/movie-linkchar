@@ -2,18 +2,16 @@ import { BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const NavBar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg bg-light ">
+		<nav className="navbar navbar-expand-lg border-bottom ">
 			<div className="container-fluid">
 				<Link
 					to="/"
 					style={{
 						textDecoration: "none",
-						color: "white",
+						color: "hotPink",
 					}}
 				>
-					<a className="navbar-brand" href="#">
-						LinkChar
-					</a>
+					LinkChar
 				</Link>
 
 				<button
@@ -36,12 +34,11 @@ const NavBar = () => {
 							to="/"
 							style={{
 								textDecoration: "none",
-								color: "white",
 							}}
 						>
-							<li className="nav-item">
+							<li className="nav-item ">
 								<a
-									className="nav-link active"
+									className="nav-link active text-light"
 									aria-current="page"
 									href="#"
 								>
@@ -49,14 +46,20 @@ const NavBar = () => {
 								</a>
 							</li>
 						</Link>
-						<li className="nav-item">
-							<a className="nav-link disabled">TV shows</a>
+						<li className="nav-item ">
+							<a className="nav-link disabled text-secondary ">
+								TV shows
+							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link disabled">Animations</a>
+							<a className="nav-link disabled text-secondary ">
+								Animations
+							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link disabled">Plans</a>
+							<a className="nav-link disabled text-secondary ">
+								Plans
+							</a>
 						</li>
 					</ul>
 					<form className="d-flex" role="search">
