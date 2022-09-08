@@ -4,3 +4,7 @@
  margin: 10px;
  overflow: hidden;
 }
+.card:hover{
+  box-shadow: 5px 10px 20px 1px rgb(255,255,255,0.2);
+  transition: all 0.5s linear;
+}

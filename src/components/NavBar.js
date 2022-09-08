@@ -1,7 +1,7 @@
 import { BsSearch } from "react-icons/bs";
 const NavBar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg bg-light">
+		<nav className="navbar navbar-expand-lg bg-light ">
 			<div className="container-fluid">
 				<a className="navbar-brand" href="#">
 					LinkChar
