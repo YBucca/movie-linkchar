@@ -1,10 +1,8 @@
 const ContainerContinue = ()=>{
   return (
 		<div className="container d-flex p-5 flex-column">
-			<h3 className="text-white">Continue Watching</h3>
-			<div className="d-flex">
-				
-			</div>
+			<h3 className="text-light">Continue Watching</h3>
+			<div className="d-flex"></div>
 		</div>
   );
 }
