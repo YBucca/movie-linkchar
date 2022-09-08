@@ -25,7 +25,7 @@ const Card = () => {
 					key={elem.id}
 				>
 					<div className="card-body">
-						<h2 className="card-title">{elem.title}</h2>
+						<h2 className="card-title">{ elem.title ? elem.title : "title not found"}</h2>
 						<p className="card-text text-secondary">
 							{elem.overview}
 						</p>
