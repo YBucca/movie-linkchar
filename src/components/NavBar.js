@@ -1,11 +1,21 @@
 import { BsSearch } from "react-icons/bs";
+import { Link } from "react-router-dom";
 const NavBar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg bg-light ">
 			<div className="container-fluid">
-				<a className="navbar-brand" href="#">
-					LinkChar
-				</a>
+				<Link
+					to="/"
+					style={{
+						textDecoration: "none",
+						color: "white",
+					}}
+				>
+					<a className="navbar-brand" href="#">
+						LinkChar
+					</a>
+				</Link>
+
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -22,15 +32,23 @@ const NavBar = () => {
 					id="navbarSupportedContent"
 				>
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
-						<li className="nav-item">
-							<a
-								className="nav-link active"
-								aria-current="page"
-								href="#"
-							>
-								Movies
-							</a>
-						</li>
+						<Link
+							to="/"
+							style={{
+								textDecoration: "none",
+								color: "white",
+							}}
+						>
+							<li className="nav-item">
+								<a
+									className="nav-link active"
+									aria-current="page"
+									href="#"
+								>
+									Movies
+								</a>
+							</li>
+						</Link>
 						<li className="nav-item">
 							<a className="nav-link disabled">TV shows</a>
 						</li>
@@ -48,12 +66,14 @@ const NavBar = () => {
 							placeholder="Search"
 							aria-label="Search"
 						/>
-						<button
-							className="btn btn-outline-success"
-							type="submit"
-						>
-							<BsSearch/>
-						</button>
+						<Link to="/Search">
+							<button
+								className="btn btn-outline-success"
+								type="submit"
+							>
+								<BsSearch />
+							</button>
+						</Link>
 					</form>
 					<a
 						className="nav-link dropdown-toggle d-flex align-items-center mx-3"
