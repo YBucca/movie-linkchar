@@ -1,16 +1,19 @@
 import './App.css';
-import ContainerPopular from './components/ContainerPopular';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import NavBar from './components/NavBar';
-import ContainerContinue from './components/ContainerContinue';
-import Banner from './components/Banner';
+import Home from './components/Home';
 
 function App() {
   return (
 		<div className="App">
-			<NavBar />
-			<Banner/>
-			<ContainerContinue />
-			<ContainerPopular />
+			<BrowserRouter>
+				<NavBar />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/Search" element={< Search />} />
+				</Routes>
+			</BrowserRouter>
 		</div>
   );
 }
