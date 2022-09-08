@@ -1,5 +1,11 @@
 const Aside = () =>{
-  return <h1>Aside</h1>
+  return (
+    <div className="col-lg-3 d-flex flex-column bg-primary">
+      <div>golss</div>
+      <div>jskwjd</div>
+
+    </div>
+  )
 }
 
 export default Aside; 

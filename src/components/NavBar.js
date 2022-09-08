@@ -1,3 +1,4 @@
+import { BsSearch } from "react-icons/bs";
 const NavBar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg bg-light">
@@ -47,8 +48,11 @@ const NavBar = () => {
 							placeholder="Search"
 							aria-label="Search"
 						/>
-						<button className="btn btn-outline-success" type="submit">
-							Search
+						<button
+							className="btn btn-outline-success"
+							type="submit"
+						>
+							<BsSearch/>
 						</button>
 					</form>
 					<a
