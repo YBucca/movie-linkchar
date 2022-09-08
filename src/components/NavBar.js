@@ -8,12 +8,11 @@ const NavBar = () => {
 					to="/"
 					style={{
 						textDecoration: "none",
-						color: "white",
+						color: "hotPink",
 					}}
 				>
-					<a className="navbar-brand" href="#">
 						LinkChar
-					</a>
+					
 				</Link>
 
 				<button
