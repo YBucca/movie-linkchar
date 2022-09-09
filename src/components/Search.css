@@ -7,3 +7,10 @@
 		align-items: center;
 		margin-top: 30px;
 }
+.inputSearch{
+  width: 50% !important;
+}
+.cardSearch{
+  height: 300px !important;
+  width: 400px;
+}

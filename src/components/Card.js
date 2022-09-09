@@ -16,7 +16,7 @@ const Card = () => {
 		<>
 			{movie.map((elem) => (
 				<div
-					className="card d-flex flex-row rounded-4"
+					className="card d-flex flex-row rounded-4 align-items-end "
 					style={{
 						backgroundImage: `url("https://image.tmdb.org/t/p/w500/${elem.poster_path}")`,
 						backgroundRepeat: "no-repeat",
@@ -24,9 +24,11 @@ const Card = () => {
 					}}
 					key={elem.id}
 				>
-					<div className="card-body">
-						<h2 className="card-title">{ elem.title ? elem.title : "title not found"}</h2>
-						<p className="card-text text-secondary">
+					<div className="card-body bg-dark p-2 text-dark bg-opacity-25  ">
+						<h2 className="card-title">
+							{elem.title ? elem.title : "title not found"}
+						</h2>
+						<p className="card-text text-light">
 							{elem.overview}
 						</p>
 					</div>

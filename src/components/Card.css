@@ -8,3 +8,8 @@
   box-shadow: 5px 10px 20px 1px rgb(255,255,255,0.2);
   transition: all 0.5s linear;
 }
+.card-body{
+   height: 200px !important;
+  width: 400px;
+  overflow-y: scroll;
+}

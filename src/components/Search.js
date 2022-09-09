@@ -3,7 +3,7 @@ import { useSearchParams} from "react-router-dom";
 import { BsSearch, BsStarFill} from "react-icons/bs";
 import "./Search.css";
 const Search = () => {
-	const [valorDelInput, setValorDelInput] = useState("");
+	const [inputValue, setInputValue] = useState("");
 	const [peliculas, setPeliculas] = useState([]);
 	const [searchParams, setSearchParams] = useSearchParams({ query: "" });
 
@@ -17,42 +17,42 @@ const Search = () => {
 				.then((res) => res.json())
 				.then((data) => {
 					setPeliculas(data.results);
-          console.log(data.results)
 				});
 		}
 	}, [searchParams]);
 
 	const handleChangeInput = (e) => {
-		setValorDelInput(e.target.value);
+		setInputValue(e.target.value);
 	};
 	const handleClick = (e) => {
 		setSearchParams({
-			query: valorDelInput,
+			query: inputValue,
 		});
 	};
 	return (
 		<>
-			<input
-				className="form-control me-2 "
-				type="search"
-				placeholder="Search"
-				aria-label="Search"
-				onChange={handleChangeInput}
-				value={valorDelInput}
-			/>
+			<div className="d-flex p-2 justify-content-center">
+				<input
+					className="form-control me-2 inputSearch "
+					type="search"
+					placeholder="Search movie"
+					aria-label="Search"
+					onChange={handleChangeInput}
+					value={inputValue}
+				/>
 
-			<button
-				className="btn btn-outline-success"
-				type="submit"
-				onClick={handleClick}
-			>
-				<BsSearch />
-			</button>
-
-			<div className="container-fluid bg-primary d-flex searchMovie ">
+				<button
+					className="btn btn-outline-success"
+					type="submit"
+					onClick={handleClick}
+				>
+					<BsSearch />
+				</button>
+			</div>
+			<div className="container-fluid d-flex searchMovie ">
 				{peliculas.map((elem) => (
 					<div
-						className="card d-flex flex-row rounded-4"
+						className="card d-flex flex-row rounded-4 cardSearch align-items-end"
 						style={{
 							backgroundImage: `url("https://image.tmdb.org/t/p/w500/${elem.poster_path}")`,
 							backgroundRepeat: "no-repeat",
@@ -60,10 +60,10 @@ const Search = () => {
 						}}
 						key={elem.id}
 					>
-						<div className="card-body">
-							<h2 className="card-title text-light">
+						<div className="card-body bg-dark p-2 text-dark bg-opacity-50">
+							<h3 className="card-title text-light">
 								{elem.title ? elem.title : "title not found"}
-							</h2>
+							</h3>
 							<p className="card-text text-light">
 								<BsStarFill /> {elem.vote_average}
 							</p>

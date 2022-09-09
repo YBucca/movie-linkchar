@@ -9,6 +9,7 @@ const NavBar = () => {
 					style={{
 						textDecoration: "none",
 						color: "hotPink",
+						margin:"25px"
 					}}
 				>
 					LinkChar
