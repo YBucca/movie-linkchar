@@ -29,7 +29,7 @@ const Aside = () => {
 					Sci-Fi
 				</button>
 			</div>
-			<div className="d-flex">
+			<div className="d-flex ">
 				<BsPlusCircleFill className="text-light " />
 				<h6 className="d-block text-light">
 					Add your favourite genres

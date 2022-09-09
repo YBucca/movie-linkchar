@@ -9,7 +9,8 @@ const NavBar = () => {
 					style={{
 						textDecoration: "none",
 						color: "hotPink",
-						margin: "25px",
+						margin: "20px",
+						fontSize: "25px"
 					}}
 				>
 					LinkChar
@@ -37,7 +38,7 @@ const NavBar = () => {
 								textDecoration: "none",
 							}}
 						>
-							<li className="nav-item ">
+							<li className="nav-item mx-3 ">
 								<a
 									className="nav-link active text-light"
 									aria-current="page"
@@ -47,17 +48,17 @@ const NavBar = () => {
 								</a>
 							</li>
 						</Link>
-						<li className="nav-item ">
+						<li className="nav-item  mx-3">
 							<a className="nav-link disabled text-secondary ">
 								TV shows
 							</a>
 						</li>
-						<li className="nav-item">
+						<li className="nav-item mx-3">
 							<a className="nav-link disabled text-secondary ">
 								Animations
 							</a>
 						</li>
-						<li className="nav-item">
+						<li className="nav-item mx-3">
 							<a className="nav-link disabled text-secondary ">
 								Plans
 							</a>

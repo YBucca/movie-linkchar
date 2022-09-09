@@ -6,11 +6,13 @@
 
 .App{
   background-color: #18181A;
-
 }
 @media screen and (max-width:600px) {
 .container-flex{
   display: flex;
   flex-direction: column !important;
+}
+.w-card{
+  width: 85% !important;
 }
 }

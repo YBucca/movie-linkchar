@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Card.css";
+import "../App.css"
 const Card = () => {
 	const [movie, setMovie] = useState([]);
 	useEffect(() => {
@@ -16,7 +17,7 @@ const Card = () => {
 		<>
 			{movie.map((elem) => (
 				<div
-					className="card d-flex flex-row rounded-4 align-items-end "
+					className="card d-flex flex-row rounded-4 align-items-end w-card"
 					style={{
 						backgroundImage: `url("https://image.tmdb.org/t/p/w500/${elem.poster_path}")`,
 						backgroundRepeat: "no-repeat",
