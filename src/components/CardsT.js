@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const CardsT = () => {
+const CardsT = ({value}) => {
 	const [movie, setMovie] = useState([]);
 	useEffect(() => {
 		fetch(
@@ -16,7 +16,7 @@ const CardsT = () => {
 		<>
 			{movie.map((elem) => (
 				<div
-					className="card d-flex flex-row col-11 rounded-5 align-items-end"
+					className={`card d-flex flex-row col-${value} rounded-5 align-items-end`}
 					style={{
 						backgroundImage: `url("https://image.tmdb.org/t/p/w500/${elem.poster_path}")`,
 						backgroundRepeat: "no-repeat",
@@ -24,7 +24,7 @@ const CardsT = () => {
 					}}
 					key={elem.id}
 				>
-					<div className="card-body bg-dark p-2 text-dark bg-opacity-25 animate__animated animate__fadeInUp cards-b">
+					<div className="card-body bg-dark p-2 text-dark bg-opacity-50 animate__animated animate__fadeInUp cards-b">
 						<h2 className="card-title">
 							{elem.title ? elem.title : "title not found"}
 						</h2>

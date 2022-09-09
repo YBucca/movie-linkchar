@@ -1,13 +1,15 @@
 import { BsPlusCircleFill } from "react-icons/bs";
-import "./Aside.css"
-import CardsT from "./CardsT"
+import "./Aside.css";
+import CardsT from "./CardsT";
 
 const Aside = () => {
 	return (
-		<div className="col-lg-3 d-flex flex-column d-none d-sm-block d-sm-none d-md-block p-3 border-end  ">
-			<h4 className="text-light">New trailers</h4>
+		<div className="col-lg-3 d-flex flex-column p-3 border-end d-none d-xl-block ">
+			<div className="mb-5">
+				<h4 className="text-light">New trailers</h4>
 
-			<CardsT />
+				<CardsT value={11} />
+			</div>
 
 			<h4 className="text-light">Favourite genres</h4>
 			<div className="d-flex justify-content-start genres flex-wrap">
