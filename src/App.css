@@ -1,18 +1,23 @@
-*{
-  margin-top: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+	margin-top: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App{
-  background-color: #18181A;
+.App {
+	background-color: #18181a;
 }
-@media screen and (max-width:600px) {
-.container-flex{
-  display: flex;
-  flex-direction: column !important;
+@media screen and (max-width: 600px) {
+	.container-flex {
+		display: flex;
+		flex-direction: column !important;
+	}
+	.w-card {
+		width: 85% !important;
+	}
 }
-.w-card{
-  width: 85% !important;
-}
+@media screen and (max-width: 1500px) {
+	.banner {
+		width: 60% !important;
+	}
 }

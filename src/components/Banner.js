@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { BsPlayCircle } from "react-icons/bs";
 import "./Banner.css";
+import "../App.css"
 const Banner = () => {
 	let pageRandom = Math.floor(Math.random() * 500);
 	const [movie, setMovie] = useState([]);
