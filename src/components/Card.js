@@ -24,13 +24,11 @@ const Card = () => {
 					}}
 					key={elem.id}
 				>
-					<div className="card-body bg-dark p-2 text-dark bg-opacity-25  ">
+					<div className="card-body bg-dark p-2 text-dark bg-opacity-25 cards-b ">
 						<h2 className="card-title">
 							{elem.title ? elem.title : "title not found"}
 						</h2>
-						<p className="card-text text-light">
-							{elem.overview}
-						</p>
+						<p className="card-text text-light">{elem.overview}</p>
 					</div>
 				</div>
 			))}

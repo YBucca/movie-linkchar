@@ -1,4 +1,4 @@
-import { BsSearch } from "react-icons/bs";
+import { BsSearch, BsUiRadiosGrid } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const NavBar = () => {
 	return (
@@ -9,7 +9,7 @@ const NavBar = () => {
 					style={{
 						textDecoration: "none",
 						color: "hotPink",
-						margin:"25px"
+						margin: "25px",
 					}}
 				>
 					LinkChar
@@ -63,18 +63,19 @@ const NavBar = () => {
 							</a>
 						</li>
 					</ul>
-					<form className="d-flex" role="search">
-						<Link to="/Search">
-							<button
-								className="btn "
-								type="submit"
-							>
-								<BsSearch className="text-light" />
-							</button>
-						</Link>
-					</form>
+
+					<Link
+						to="/Search"
+						style={{
+							margin: "20px",
+							fontSize: "20px",
+						}}
+					>
+						<BsSearch className="text-light" />
+					</Link>
+					<BsUiRadiosGrid className="text-light" />
 					<a
-						className="nav-link dropdown-toggle d-flex align-items-center mx-3"
+						className="nav-link dropdown-toggle d-flex align-items-center mx-3 text-light"
 						href="#"
 						id="navbarDropdownMenuLink"
 						role="button"
@@ -84,7 +85,7 @@ const NavBar = () => {
 						<img
 							src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
 							className="rounded-circle"
-							height="22"
+							height="25"
 							alt="Avatar"
 							loading="lazy"
 						/>

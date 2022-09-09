@@ -24,11 +24,11 @@ const CardsT = () => {
 					}}
 					key={elem.id}
 				>
-					<div className="card-body bg-dark p-2 text-dark bg-opacity-25 animate__animated animate__fadeInUp ">
+					<div className="card-body bg-dark p-2 text-dark bg-opacity-25 animate__animated animate__fadeInUp cards-b">
 						<h2 className="card-title">
 							{elem.title ? elem.title : "title not found"}
 						</h2>
-						<p className="card-text text-secondary">
+						<p className="card-text text-light">
 							{elem.overview}
 						</p>
 					</div>

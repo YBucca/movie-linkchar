@@ -4,7 +4,7 @@ import CardsT from "./CardsT"
 
 const Aside = () => {
 	return (
-		<div className="col-lg-3 d-flex flex-column d-none d-sm-block d-sm-none d-md-block p-3 border-end ">
+		<div className="col-lg-3 d-flex flex-column d-none d-sm-block d-sm-none d-md-block p-3 border-end  ">
 			<h4 className="text-light">New trailers</h4>
 
 			<CardsT />
