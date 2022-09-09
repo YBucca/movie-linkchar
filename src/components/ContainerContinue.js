@@ -2,7 +2,7 @@ import CardsT from "./CardsT";
 import "../App.css"
 const ContainerContinue = ()=>{
   return (
-		<div className="container d-flex p-5 flex-column ">
+		<div className="container d-flex m-3 flex-column ">
 			<div className="d-flex">
 				<h3 className="text-light">Continue Watching</h3>{" "}
 				<p className="text-secondary p-2">| 4 movies</p>

@@ -49,7 +49,7 @@ const Search = () => {
 					<BsSearch />
 				</button>
 			</div>
-			<div className="container-fluid d-flex searchMovie ">
+			<div className="container d-flex searchMovie ">
 				{peliculas.map((elem) => (
 					<div
 						className="card d-flex flex-row rounded-4 cardSearch align-items-end"
