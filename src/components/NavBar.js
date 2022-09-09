@@ -1,4 +1,4 @@
-import { BsSearch, BsUiRadiosGrid } from "react-icons/bs";
+import { BsSearch, BsUiRadiosGrid, BsAppIndicator } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const NavBar = () => {
 	return (
@@ -63,16 +63,16 @@ const NavBar = () => {
 							</a>
 						</li>
 					</ul>
-
 					<Link
 						to="/Search"
 						style={{
-							margin: "20px",
+							margin: "15px",
 							fontSize: "20px",
 						}}
 					>
 						<BsSearch className="text-light" />
 					</Link>
+					<BsAppIndicator className="text-light m-3" />
 					<BsUiRadiosGrid className="text-light" />
 					<a
 						className="nav-link dropdown-toggle d-flex align-items-center mx-3 text-light"
