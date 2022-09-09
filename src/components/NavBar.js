@@ -16,7 +16,7 @@ const NavBar = () => {
 				</Link>
 
 				<button
-					className="navbar-toggler"
+					className="navbar-toggler btn-outline-light"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent"
@@ -24,7 +24,7 @@ const NavBar = () => {
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span className="navbar-toggler-icon"></span>
+					<span className="navbar-toggler-icon "></span>
 				</button>
 				<div
 					className="collapse navbar-collapse"
