@@ -15,9 +15,5 @@
 	.w-card {
 		width: 85% !important;
 	}
-}
-@media screen and (max-width: 1500px) {
-	.banner {
-		width: 60% !important;
-	}
+
 }
