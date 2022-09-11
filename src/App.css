@@ -17,3 +17,8 @@
 	}
 
 }
+@media screen and (max-width: 1500px) {
+	.container-break{
+		width: 1000px !important;
+	}
+}
